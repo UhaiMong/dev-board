@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "segoe ui";
+}
+
+.nav-wrapper {
+  background-color: #ececec;
+  width: 100%;
+}
+.nav {
+  height: 50px;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  color: #333;
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  transition: ease-out 0.4s;
+}
+
+.nav > .nav-links > a:hover {
+  color: #1c1b1b;
+  text-decoration: underline;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+/* faq */
+
+.faq-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+/* Blog */
+.blog-container {
+  width: 85%;
+  margin: 0 auto;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 16px;
+}
+.blog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.div1 {
+  grid-column: span 4 / span 4;
+  grid-row: span 5 / span 5;
+}
+
+.div2 {
+  grid-row: span 5 / span 5;
+  grid-column-start: 5;
+}
+.recent-news-order-list {
+  list-style-type: circle;
+  padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #333;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .blog-wrapper {
+    grid-template-columns: auto;
+  }
+}

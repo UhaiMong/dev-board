@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body id="body-bg">
+    <nav class="h-16 bg-base">
+      <header class="h-16 flex justify-between items-center container">
+        <div>
+          <a href="#" class="cursor-pointer bg-none flex items-center gap-x-3">
+            <img class="w-8 h-8" src="./assets/logo.png" alt="logo image" />
+            <p>Dev<span class="inline font-bold">Board</span></p>
+          </a>
+        </div>
+        <div class="flex items-center gap-x-7">
+          <div class="flex gap-x-3">
+            <img class="w-6 h-6" src="./assets/checkbox.png" alt="" />
+            <p><span class="font-bold" id="task-completed">25</span></p>
+          </div>
+          <div>
+            <button
+              style="background-color: transparent"
+              onclick="setRandomBgColor()"
+              class="btn-theme-changer"
+            >
+              <img
+                class="w-8 h-8"
+                src="./assets/theme-btn.png"
+                alt="Theme change"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+    </nav>
+    <!-- Main section -->
+    <section class="w-full h-auto">
+      <div
+        class="container flex justify-between items-start gap-x-4 main-dev-board-wrapper"
+      >
+        <div class="main-dev-board bg-base rounded-xl w-[75%]">
+          <div class="flex justify-between gap-x-4">
+            <!-- Assigned Tasks -->
+            <div
+              class="w-1/4 tasks bg-primary flex justify-evenly items-center gap-x-3 rounded-xl p-5"
+            >
+              <div
+                class="h-9 w-9 rounded-full bg-base flex justify-center items-center"
+              >
+                <img
+                  class="w-5 h-5"
+                  src="./assets/checkbox.png"
+                  alt="task check icon"
+                />
+              </div>
+              <div>
+                <p>Task Assigned</p>
+                <p id="assigned-tasks" class="font-bold"></p>
+              </div>
+            </div>
+            <!-- Discover board -->
+            <div
+              onclick="redirectTo('pages/blog.html')"
+              class="discover w-1/2 bg-linear-to-r/srgb from-indigo-500 to-indigo-300 flex justify-start items-center rounded-xl cursor-pointer ease-in-out hover:bg-linear-to-r/srgb hover:from-indigo-500 hover:to-teal-400"
+            >
+              <div>
+                <img class="w-20 h-20" src="./assets/board.png" alt="board" />
+              </div>
+              <h2 class="text-white">Discover Something <br />New Today!</h2>
+            </div>
+            <!-- Calender -->
+            <div
+              class="w-1/4 calendar bg-primary flex justify-evenly items-center rounded-xl"
+            >
+              <div
+                class="h-9 w-9 rounded-full bg-base flex justify-center items-center"
+              >
+                <img
+                  class="w-5 h-5"
+                  src="./assets/calender.png"
+                  alt="calendar"
+                />
+              </div>
+              <div>
+                <p id="day">Wed</p>
+                <p id="date" class="font-bold">July 28 2025</p>
+              </div>
+            </div>
+          </div>
+          <!-- task card -->
+          <div id="taskSection" class="task-card-wrapper">
+            <!-- Single task card -->
+          </div>
+        </div>
+        <!-- Activity History -->
+        <div class="activity-log bg-base rounded-md w-[25%]">
+          <div
+            style="margin: 10px 0"
+            class="flex justify-center items-center gap-x-3"
+          >
+            <img
+              class="w-4 h-4"
+              src="./assets/activity.png"
+              alt="Activity log"
+            />
+            <span>Activity Log</span>
+          </div>
+          <div class="flex justify-center">
+            <button
+              id="clear-activity"
+              class="text-white cursor-pointer rounded-md font-semibold activity-log-button"
+            >
+              Clear Log
+            </button>
+          </div>
+          <div id="activity-log">
+            <!-- Activity history log -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- javaScript -->
+    <script src="./utilities/utilities.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "projectName": "TaskFlow",
+    "issueTitle": "Backend API Timeout",
+    "issueDetails": "The task fetching API is taking too long to respond when more than 1000 tasks are loaded. Optimize database query and add pagination.",
+    "deadline": "20 October 2025"
+  },
+  {
+    "id": 2,
+    "projectName": "FoodieApp",
+    "issueTitle": "Image Upload Not Working",
+    "issueDetails": "Users are unable to upload profile pictures from mobile devices. The issue occurs due to incorrect Cloudinary API configuration.",
+    "deadline": "23 October 2025"
+  },
+  {
+    "id": 3,
+    "projectName": "EduSmart",
+    "issueTitle": "Quiz Score Mismatch",
+    "issueDetails": "The final quiz score is not matching the actual answers. The calculation logic in the backend should be reviewed and corrected.",
+    "deadline": "19 October 2025"
+  },
+  {
+    "id": 4,
+    "projectName": "MediConnect",
+    "issueTitle": "Login Redirect Error",
+    "issueDetails": "After successful login, users are not being redirected to the dashboard but staying on the login page. Possibly a frontend route issue.",
+    "deadline": "22 October 2025"
+  },
+  {
+    "id": 5,
+    "projectName": "RideLink",
+    "issueTitle": "Map Not Loading",
+    "issueDetails": "Google Map is not rendering on the ride request page. The API key might be invalid or restricted for this domain.",
+    "deadline": "25 October 2025"
+  },
+  {
+    "id": 6,
+    "projectName": "ShopEase",
+    "issueTitle": "Checkout Button Not Responding",
+    "issueDetails": "On the checkout page, the 'Place Order' button does not trigger the payment process. The event listener for the button may not be initialized properly.",
+    "deadline": "24 October 2025"
+  }
+]

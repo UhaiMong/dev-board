@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Blog</title>
+    <link rel="stylesheet" href="./blog.css" />
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="nav-wrapper">
+      <div class="nav">
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="logo w-8 h-8">
+          <a href="../index.html"
+            ><img src="../assets/logo.png" alt="logo"
+          /></a>
+        </div>
+        <div class="nav-links">
+          <a href="./blog.html">Popular</a>
+          <a href="#">Recent</a>
+          <a href="./archive.html">Archive</a>
+          <a href="#">Press</a>
+        </div>
+      </div>
+    </header>
+    <!-- Blog -->
+    <section>
+      <div class="blog-container">
+        <h1 class="text-4xl font-bold my-5">Popular Article</h1>
+        <div class="parent">
+          <div id="blog-wrapper" class="div1 blog-wrapper">
+            <!-- single Blog -->
+          </div>
+          <div class="div2 shadow-lg p-4">
+            <h2 class="text-xl font-bold">Recent</h2>
+            <div class="">
+              <ol id="recentNews" class="recent-news-order-list">
+                <!-- <li>
+                  <a class="hover:underline" href="" target="_blank"
+                    >Recent article link</a
+                  >
+                </li> -->
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section>
+      <div class="faq-wrapper">
+        <h1 class="text-3xl font-bold my-6 text-center">
+          Frerquently Ask Question
+        </h1>
+        <div class="collapse collapse-plus bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title font-semibold">
+            How do I create an account?
+          </div>
+          <div class="collapse-content text-sm">
+            Click the "Sign Up" button in the top right corner and follow the
+            registration process.
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">
+            I forgot my password. What should I do?
+          </div>
+          <div class="collapse-content text-sm">
+            Click on "Forgot Password" on the login page and follow the
+            instructions sent to your email.
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">
+            How do I update my profile information?
+          </div>
+          <div class="collapse-content text-sm">
+            Go to "My Account" settings and select "Edit Profile" to make
+            changes.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Script -->
+    <script src="../utilities/utilities.js"></script>
+    <script src="../js/blog.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archive</title>
+    <link rel="stylesheet" href="./archive.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="nav-wrapper">
+      <div class="nav">
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="logo w-8 h-8">
+          <a href="../index.html"
+            ><img src="../assets/logo.png" alt="logo"
+          /></a>
+        </div>
+        <div class="nav-links">
+          <a href="./blog.html">Popular</a>
+          <a href="#">Recent</a>
+          <a href="#">Archive</a>
+          <a href="#">Press</a>
+        </div>
+      </div>
+    </header>
+    <!-- Archive -->
+    <section>
+      <div class="archive">
+        <h1 class="text-4xl font-bold my-5">Archive Article</h1>
+        <fieldset
+          class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 flex my-5"
+        >
+          <legend class="fieldset-legend">Filter Archive</legend>
+
+          <label class="label">From</label>
+          <input
+            id="startingDate"
+            type="date"
+            class="input"
+            placeholder="From"
+          />
+
+          <label class="label">To</label>
+          <input id="endingDate" type="date" class="input" placeholder="To" />
+          <input
+            id="archive-button"
+            class="bg-blue-500 text-white font-bold px-3 py-2 cursor-pointer shadow-md rounded-md ease-in focus:bg-blue-400"
+            type="submit"
+            value="Search"
+          />
+        </fieldset>
+        <div id="archive-article" class="archive-article">
+          <!-- single article -->
+        </div>
+      </div>
+    </section>
+    <!-- Script -->
+    <script src="../utilities/utilities.js"></script>
+    <script src="../js/archive.js"></script>
+  </body>
+</html>

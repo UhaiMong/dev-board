@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: auto;
+  height: auto;
+  background-color: #e6dfaf;
+}
+.bg-base {
+  background-color: #ffffff;
+}
+.bg-primary {
+  background-color: #f4f7ff;
+}
+.btn-theme-changer {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.main-dev-board-wrapper {
+  margin-top: 20px;
+}
+.main-dev-board {
+  padding: 20px;
+}
+.discover {
+  padding: 8px 12px;
+}
+.task-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.task-box {
+  padding: 20px;
+  margin-top: 20px;
+}
+.task-project {
+  padding: 5px;
+  display: inline-block;
+}
+.task-description {
+  padding: 7px 9px;
+  border-radius: 12px;
+}
+button {
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 7px 8px;
+  font-weight: 500;
+  transition: all ease;
+}
+button:hover {
+  background-color: #0b0bce;
+}
+button:focus {
+  background-color: #0000ffc8;
+}
+.activity-log {
+  height: 100%;
+  padding: 8px 12px;
+}
+.activity-history {
+  margin-top: 20px;
+  padding: 8px;
+  color: gray;
+}

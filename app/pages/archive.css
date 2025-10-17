@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.archive {
+  width: 90%;
+  margin: 0 auto;
+}
+.archive-article {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
